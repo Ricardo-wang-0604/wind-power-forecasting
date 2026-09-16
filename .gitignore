@@ -1,0 +1,20 @@
+# 数据文件太大，不进版本库（用 data/download.py 重新获取）
+data/raw/
+*.csv
+!results/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+
+# 输出图片可以选择性提交（README 要引用，所以保留）
+# results/*.png

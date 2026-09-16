@@ -1,0 +1,23 @@
+# 统一换行符处理
+# Windows 上开发、可能要给别人在 Linux/Mac 上跑，所以要做归一化
+* text=auto eol=lf
+
+# Python 源码
+*.py text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+
+# Windows 批处理必须保留 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 数据文件（原则上不进仓库，这里只是兜底）
+*.csv text eol=lf
+*.nc binary
+*.zip binary
+*.png binary
+
+# 不要显示在 GitHub 的语言统计里
+*.ipynb linguist-vendored
+data/raw/** linguist-vendored
+results/*.png linguist-documentation
